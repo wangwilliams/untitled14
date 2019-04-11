@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE gridbag SYSTEM "gridbag.dtd">
+<gridbag>
+    <row>
+        <cell>
+            <bean>
+                <class>javax.swing.JLabel</class>
+                <property>
+                    <name></name>
+                    <value>
+                        <string>FACE:</string>
+                    </value>
+                </property>
+            </bean>
+        </cell>
+        <cell fill="HORIZONAL" weightx="100">
+            <bean>
+                <class>javax.swing.JComboBox</class>
+            </bean>
+        </cell>
+        <cell fill="BOTH" gridheight="4" weightx="100" weighty="100">
+            <bean id="sample">
+                <class>javax.swing.JTextArea</class>
+                <property>
+                    <name>text</name>
+                    <value>
+                        <string>The quick brown fox jumps over the lazy dog</string>
+                    </value>
+                </property>
+                <property>
+                    <name>editable</name>
+                    <value>
+                        <boolean>false</boolean>
+                    </value>
+                </property>
+                <property>
+                    <name>rows</name>
+                    <value>
+                        <int>8</int>
+                    </value>
+                </property>
+                <property>
+                    <name>columns</name>
+                    <value>
+                        <int>20</int>
+                    </value>
+                </property>
+                <property>
+                    <name>lineWrap</name>
+                    <value>
+                        <boolean>true</boolean>
+                    </value>
+                </property>
+                <property>
+                    <name>border</name>
+                    <value>
+                        <bean>
+                            <class>javax.swing.border.EtchedBorder</class>
+                        </bean>
+                    </value>
+                </property>
+            </bean>
+        </cell>
+    </row>
+    <row>
+        <cell anchor="EAST">
+            <bean>
+                <class>javax.swing.JLabel</class>
+                <property>
+                    <name>text</name>
+                    <value>
+                        <string>Size:</string>
+                    </value>
+                </property>
+            </bean>
+        </cell>
+        <cell fill="HORIZONAL" weightx="100">
+            <bean id="size">
+                <class>javax.swing.JComboBox</class>
+            </bean>
+        </cell>
+    </row>
+    <row>
+        <cell gridwidth="2" weighty="100">
+            <bean>
+                <class>javax.swing.JCheckBox</class>
+                <property>
+                    <name>text</name>
+                    <value>
+                        <string>Bold</string>
+                    </value>
+                </property>
+            </bean>
+        </cell>
+    </row>
+    <row>
+        <cell gridwidth="2" weighty="100">
+            <bean id="italic">
+                <class>javax.swing.JCheckBox</class>
+                <property>
+                    <name>text</name>
+                    <value>
+                        <string>Italic</string>
+                    </value>
+                </property>
+            </bean>
+        </cell>
+    </row>
+</gridbag>
